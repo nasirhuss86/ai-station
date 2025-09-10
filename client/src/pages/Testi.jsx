@@ -34,7 +34,7 @@ const Testi = () => {
 
   return (
     <div className="px-4 sm:px-20 xl:px-32 py-24 min-h-screen bg-[url(./gradientBackground.png)] bg-cover bg-no-repeat">
-      {/* Intro */}
+     
       <div className="text-center mb-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-slate-800">
           Real Voices. Real Impact.
@@ -48,14 +48,14 @@ const Testi = () => {
         </p>
       </div>
 
-      {/* Testimonials */}
+     
       <div className="flex flex-wrap mt-10 justify-center">
         {dummyTestimonialData.map((testimonial, index) => (
           <div
             key={index}
             className="p-8 m-4 max-w-xs rounded-lg bg-[#FDFDFE] shadow-lg border border-gray-100 hover:-translate-y-1 transition duration-300 cursor-pointer"
           >
-            {/* Rating */}
+           
             <div className="flex items-center gap-1">
               {Array(5)
                 .fill(0)
@@ -73,13 +73,13 @@ const Testi = () => {
                 ))}
             </div>
 
-            {/* Content */}
+           
             <p className="text-gray-500 text-sm my-5">
               "{testimonial.content}"
             </p>
             <hr className="mb-5 border-gray-300" />
 
-            {/* Author */}
+         
             <div className="flex items-center gap-4">
               <img
                 src={testimonial.image}
@@ -95,7 +95,7 @@ const Testi = () => {
         ))}
       </div>
 
-      {/* Home Button */}
+    
       <div className="text-center mt-12">
         <button
           onClick={() => navigate("/")}

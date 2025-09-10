@@ -14,7 +14,7 @@ const Footer = () => {
             generation.
           </p>
           <div className="flex items-center gap-3 mt-4">
-            {/* Instagram */}
+           
             <a
               href="https://instagram.com/nasir0.6"
               target="_blank"
@@ -26,7 +26,7 @@ const Footer = () => {
               </svg>
             </a>
 
-            {/* GitHub */}
+            
             <a
               href="https://github.com/nasirhuss86"
               target="_blank"
@@ -38,7 +38,7 @@ const Footer = () => {
               </svg>
             </a>
 
-            {/* Twitter */}
+           
             <a
               href="https://twitter.com/"
               target="_blank"
@@ -50,7 +50,7 @@ const Footer = () => {
               </svg>
             </a>
 
-            {/* LinkedIn */}
+            
             <a
               href="https://linkedin.com/in/nasirhussain86"
               target="_blank"
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* COMPANY */}
+       
         <div>
           <p className="text-lg text-gray-800">COMPANY</p>
           <ul className="mt-3 flex flex-col gap-2 text-sm">
@@ -104,7 +104,7 @@ const Footer = () => {
               placeholder="Your email"
             />
             <button className="flex items-center justify-center bg-black h-9 w-9 aspect-square rounded-r">
-              {/* Arrow icon */}
+             
               <svg
                 className="w-4 h-4 text-white"
                 aria-hidden="true"

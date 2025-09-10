@@ -19,7 +19,7 @@ const Helpcenter = () => {
         In the meantime, feel free to explore our other tools.
       </p>
 
-      {/* Home Button */}
+     
       <button
         onClick={() => navigate("/")}
         className="mt-8 bg-primary text-white px-6 py-2 rounded-lg shadow hover:scale-105 active:scale-95 transition-transform"
