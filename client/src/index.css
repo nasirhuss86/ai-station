@@ -9,6 +9,7 @@
 
 @theme{
   --color-primary: #5044E5;
+  --color-secondary: gray-600
 }
 
 .reset-tw , .reset-tw *{
