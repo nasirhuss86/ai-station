@@ -10,6 +10,10 @@ import RemoveObject from './pages/RemoveObject'
 import ReviewResume from './pages/ReviewResume'
 import RemoveBackground from './pages/RemoveBackground'
 import GenerateImages from './pages/GenerateImages'
+import About from './pages/About'
+import Author from './pages/Author'
+import Helpcenter from './pages/Helpcenter'
+import Testi from './pages/Testi'
 
 
 const App = () => {
@@ -18,7 +22,10 @@ const App = () => {
 
       <Routes>
         <Route path='/' element = {<Home/>}/>
-        
+        <Route path='/about' element = {<About/>}/>
+        <Route path='/author' element={<Author/>}/>
+        <Route path='/helpcenter' element={<Helpcenter/>}/>
+        <Route path='/testimonials' element={<Testi/>}/>
 
         <Route path='/ai'element={<Layout/>}> 
           <Route index element={<Dashboard/>}/>

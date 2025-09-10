@@ -5,6 +5,7 @@ import AiTools from '../components/AiTools'
 import Testimonials from '../components/Testimonial'
 import Plan from '../components/Plan'
 import Footer from '../components/Footer'
+import ExploreMore from '../components/ExploreMore'
 
 
 const Home = () =>{
@@ -15,7 +16,9 @@ const Home = () =>{
        <AiTools/>
         <Testimonials/>
         <Plan/>
+        <ExploreMore/>
         <Footer/>
+        
 
        </>
     )

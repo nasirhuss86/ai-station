@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -63,23 +64,18 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* COMPANY */}
         <div>
           <p className="text-lg text-gray-800">COMPANY</p>
           <ul className="mt-3 flex flex-col gap-2 text-sm">
             <li>
-              <a href="#">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="#">Careers</a>
+              <Link to="/author">Author</Link>
             </li>
             <li>
-              <a href="#">Press</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Partners</a>
+              <Link to="/testimonials">Testimonials</Link>
             </li>
           </ul>
         </div>
@@ -88,19 +84,10 @@ const Footer = () => {
           <p className="text-lg text-gray-800">SUPPORT</p>
           <ul className="mt-3 flex flex-col gap-2 text-sm">
             <li>
-              <a href="#">Help Center</a>
+              <Link to="/helpcenter">Help Center</Link>
             </li>
             <li>
-              <a href="#">Safety Information</a>
-            </li>
-            <li>
-              <a href="#">Cancellation Options</a>
-            </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-            <li>
-              <a href="#">Accessibility</a>
+              
             </li>
           </ul>
         </div>
@@ -140,22 +127,11 @@ const Footer = () => {
         </div>
       </div>
       <hr className="border-gray-300 mt-8" />
-      <div className="flex flex-col md:flex-row gap-2 items-center justify-between py-5">
+      <div className="flex flex-col items-center justify-center text-center py-5">
         <p>
-          © {new Date().getFullYear()} <a href="">AI.station</a>. All rights
+          © {new Date().getFullYear()} <a href="/">AI.station</a>. All rights
           reserved.
         </p>
-        <ul className="flex items-center gap-4">
-          <li>
-            <a href="#">Privacy</a>
-          </li>
-          <li>
-            <a href="#">Terms</a>
-          </li>
-          <li>
-            <a href="#">Sitemap</a>
-          </li>
-        </ul>
       </div>
     </div>
   );
