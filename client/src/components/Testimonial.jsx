@@ -3,14 +3,14 @@ import { assets } from "../assets/assets";
 const Testimonials = () => {
     const dummyTestimonialData = [
         {
-            image: "public/yasir.png",
+            image: "/yasir.png",
             name: 'Yasir Aquil ',
             title: 'Content Creator, Freelance',
             content: 'Before AI.Station: sleepless nights, endless drafts. After AI.Station: Netflix, chill, and content DONE. Honestly, it feels like cheating—but the legal kind ',
             rating: 4,
         },
         {
-            image: "public/ovais.jpeg",
+            image: "/ovais.jpeg",
             name: 'Ovais Rajput',
             title: 'DEVELOPER, TechCorp',
             content: 'AI.station has made our content creation process effortless. The AI tools have helped us produce high-quality content faster than ever before.',
