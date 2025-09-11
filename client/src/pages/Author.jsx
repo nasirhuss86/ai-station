@@ -98,7 +98,7 @@ const Author = () => {
          
           <button
             onClick={() => navigate("/")}
-            className="mt-8 bg-primary text-white px-6 py-2 rounded-lg shadow hover:scale-105 active:scale-95 transition-transform"
+            className="mt-8 cursor-pointer bg-primary text-white px-6 py-2 rounded-lg shadow hover:scale-105 active:scale-95 transition-transform"
           >
             Go Back Home
           </button>

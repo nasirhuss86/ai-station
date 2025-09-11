@@ -142,7 +142,7 @@ const About = () => {
        
         <button
           onClick={() => navigate("/")}
-          className="bg-primary text-white px-8 py-3 rounded-full shadow hover:scale-105 active:scale-95 transition"
+          className="bg-primary cursor-pointer text-white px-8 py-3 rounded-full shadow hover:scale-105 active:scale-95 transition"
         >
           Go Back Home
         </button>
@@ -150,7 +150,7 @@ const About = () => {
        
         <button
           onClick={() => navigate("/author")}
-          className="border border-primary text-primary px-8 py-3 rounded-full hover:bg-primary/10 hover:scale-105 active:scale-95 transition"
+          className="border cursor-pointer border-primary text-primary px-8 py-3 rounded-full hover:bg-primary/10 hover:scale-105 active:scale-95 transition"
         >
           Meet the Author
         </button>
