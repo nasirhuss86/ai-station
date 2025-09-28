@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { use } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Dashboard from './pages/Dashboard'
 import WriteArticle from './pages/WriteArticle'
@@ -14,9 +14,17 @@ import About from './pages/About'
 import Author from './pages/Author'
 import Helpcenter from './pages/Helpcenter'
 import Testi from './pages/Testi'
+import { useAuth } from '@clerk/clerk-react'
+import { useEffect } from 'react'
 
 
 const App = () => {
+
+    const {getToken} = useAuth()
+    useEffect(() => {
+      getToken().then((token) => console.log(token));
+    }, [getToken]);
+
   return (
     <div> 
 
