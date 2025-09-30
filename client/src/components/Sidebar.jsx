@@ -2,6 +2,7 @@ import { useClerk, useUser } from '@clerk/clerk-react';
 import { Eraser, FileText, Hash, House, Image, LogOut, Scissors, SquarePen, Users } from 'lucide-react';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { X } from 'lucide-react';
 
 const navItems = [
   { to: '/ai', label: 'Dashboard', Icon: House },
@@ -22,15 +23,23 @@ const Sidebar = ({ sidebar, setSidebar }) => {
 
   return (
     <>
-      {/* Overlay for mobile - only shows when sidebar is open */}
-      {sidebar && (
-        <div 
-          className='fixed inset-0 bg-black bg-opacity-50 z-40 sm:hidden'
+     
+    {sidebar && (
+      <div
+        className='fixed inset-0 bg-white bg-opacity-50 z-40 sm:hidden flex items-start justify-end p-4'
+        onClick={() => setSidebar(false)}
+      >
+        <button
+          className='bg-white text-gray-600 rounded-full p-2 shadow-lg hover:bg-gray-700 transition-colors'
           onClick={() => setSidebar(false)}
-        />
-      )}
+        >
+          <X className="w-6 h-6" />
+          </button>
+      </div>
+    )}
 
-      {/* Sidebar */}
+
+      
       <div
         className={`
           w-60 bg-white border-r border-gray-200 
