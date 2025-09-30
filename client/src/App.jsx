@@ -16,6 +16,8 @@ import Helpcenter from './pages/Helpcenter'
 import Testi from './pages/Testi'
 import { useAuth } from '@clerk/clerk-react'
 import { useEffect } from 'react'
+import axios from 'axios'
+import {Toaster} from 'react-hot-toast' 
 
 
 const App = () => {
@@ -27,6 +29,7 @@ const App = () => {
 
   return (
     <div> 
+      <Toaster/>
 
       <Routes>
         <Route path='/' element = {<Home/>}/>

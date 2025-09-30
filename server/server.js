@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => res.send("Hello World"));
 
-app.use(requireAuth());
+app.use(requireAuth()); // Commented out to test
 app.use('/api/ai', aiRouter);
 app.use('/api/user', userRouter);
 

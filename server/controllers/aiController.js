@@ -267,8 +267,7 @@ export const resumeReview = async (req, res) => {
 
     await sql`INSERT INTO creations (user_id, prompt, content, type)
         VALUES (${userId},'Review the uploaded resume', ${content}, 'resume-review')`;
-
-    res.json({ success: true, content: imageUrl });
+    res.json({ success: true, content });
   } catch (error) {
     console.log(error);
     res.json({ success: false, message: error.message });
