@@ -8,7 +8,7 @@ const Testimonials = () => {
       name: "Yasir Aquil ",
       title: "CEO, BrainX",
       content:
-        "ContentAI has revolutionized our content workflow. The quality of the articles is outstanding, and it saves us hours of work every week.",
+        "AI.station didn't just improve our workflow—it obliterated our content bottlenecks. We're creating in hours what used to take us weeks. This is pure magic.",
       rating: 4,
     },
     {
@@ -17,7 +17,7 @@ const Testimonials = () => {
       name: "Ovais Rajput",
       title: "DEVELOPER, TechCorp",
       content:
-        "ContentAI has made our content creation process effortless. The AI tools have helped us produce high-quality content faster than ever before.",
+        "Stop settling for average content. AI.station is a beast—sharp, lightning-fast, and insanely powerful. Our entire team is addicted to it.",
       rating: 5,
     },
     {
@@ -26,7 +26,7 @@ const Testimonials = () => {
       name: "Narendra Modi",
       title: "PRIME MINISTER, INDIA",
       content:
-        "ContentAI has transformed our content creation process. The AI tools have helped us produce high-quality content faster than ever before.",
+        "AI.station turned our content strategy into an unstoppable force. It's not just a tool, it's our secret weapon. The competition doesn't stand a chance.",
       rating: 4,
     },
   ];
