@@ -3,12 +3,39 @@ import { dummyCreationData } from '../assets/assets';
 import { Protect } from '@clerk/clerk-react';
 import { Sparkles, Gem } from 'lucide-react';
 import CreationItem from './CreationItem';
+import axios from 'axios';
+import { useAuth } from '@clerk/clerk-react';
+import toast from 'react-hot-toast';
+
+axios.defaults.baseURL = import.meta.env.VITE_BASE_URL;
+
 
 const Dashboard = () => {
   const [creations, setCreations] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const {getToken} = useAuth()
+
+
 
   const getDashboardData = async () => {
-    setCreations(dummyCreationData);
+    try{
+      setLoading(true);
+      const {data} = await axios.get('/api/user/get-user-creations', {
+        headers: {
+          Authorization: `Bearer ${await getToken()}`
+        }
+      });
+      if(data.success){
+        setCreations(data.creation)
+      } else {
+        toast.error(data.message)
+      }
+
+    }catch(error){
+      toast.error(error.response?.data?.message || error.message)
+    }
+    setLoading(false);
+    
   };
 
   useEffect(() => {
@@ -43,14 +70,23 @@ const Dashboard = () => {
           </div>
         </div>
       </div>
-      <div className='space-y-3'>
+
+      {loading?(
+        <div className='w-full h-96 flex justify-center items-center'>
+          <div className='w-10 h-10 border-4 border-t-transparent border-blue-600 rounded-full animate-spin'></div>
+        </div>  
+
+      ):(
+        <div className='space-y-3'>
         <p className='mt-6 mb-4'>Recent Creations</p>
          {
           creations.map((item) => <CreationItem key={item.id} item={item} />)
-         }
-
-       
+         } 
       </div>
+
+
+      )}
+      
     </div>
   );
 };
