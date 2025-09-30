@@ -7,7 +7,7 @@ const Testi = () => {
 
   const dummyTestimonialData = [
     {
-      image: "public/yasir.png",
+      image: "/yasir.png",
       name: "Yasir Aquil ",
       title: "Content Creator, Freelance",
       content:
@@ -15,7 +15,7 @@ const Testi = () => {
       rating: 4,
     },
     {
-      image: "public/ovais.jpeg",
+      image: "/ovais.jpeg",
       name: "Ovais Rajput",
       title: "Developer, BrainyTech",
       content:

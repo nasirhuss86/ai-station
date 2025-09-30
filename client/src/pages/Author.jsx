@@ -13,7 +13,7 @@ const Author = () => {
           
           <div className="flex-shrink-0">
             <img
-              src="/public/nasir.jpeg"
+              src="/nasir.jpeg"
               alt="Nasir Hussain"
               className="w-40 h-40 sm:w-52 sm:h-52 rounded-2xl object-cover shadow-lg"
             />
