@@ -4,7 +4,7 @@ const Testimonials = () => {
   const dummyTestimonialData = [
     {
       image:
-        "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200",
+        "/yasir.png",
       name: "Yasir Aquil ",
       title: "CEO, BrainX",
       content:
@@ -13,7 +13,7 @@ const Testimonials = () => {
     },
     {
       image:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200",
+        "/ovais.jpeg",
       name: "Ovais Rajput",
       title: "DEVELOPER, TechCorp",
       content:
@@ -22,7 +22,7 @@ const Testimonials = () => {
     },
     {
       image:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop",
+        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcREq9GlbevX6vffk-CGu-LmtF-dc2XBFj_xhjITpYVhVo4Xec2R3F8xcCYudB6Guzj2MxqBfNzVSwJWIqJVKglBvjwPSZZzMjBpvR4Jg-wgBg",
       name: "Narendra Modi",
       title: "PRIME MINISTER, INDIA",
       content:
