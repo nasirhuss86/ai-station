@@ -58,7 +58,7 @@ const ReviewResume = () => {
         <p className='text-xs text-gray-500 font-light mt-1'>Supports PDF resume only.</p>
 
         <button disabled={loading} className='w-full flex justify-center items-center gap-2 bg-gradient-to-r from-[#06B6D4] to-[#3B82F6] text-white px-4 py-2 mt-6 text-sm rounded-lg cursor-pointer'>
-          {loading ? <span className='loader !border-2 !border-t-2 !border-white !w-5 !h-5'></span> : <FileText className='w-5' />}
+          {loading ? <span className='w-4 h-4 border-2 border-t-transparent border-white rounded-full animate-spin'></span> : <FileText className='w-5' />}
          
           Review Resume
         </button>

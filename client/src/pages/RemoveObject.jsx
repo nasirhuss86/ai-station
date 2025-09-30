@@ -76,7 +76,7 @@ const RemoveObject = () => {
 
         <button disabled={loading} className='w-full flex justify-center items-center gap-2 bg-gradient-to-r from-[#8B5CF6] to-[#EC4899] text-white px-4 py-2 mt-6 text-sm rounded-lg cursor-pointer'>
           {loading ? <span className='w-4 h-4 border-2 border-t-transparent border-white rounded-full animate-spin'></span> : <Scissors className='w-5' />}
-          Remove background
+          Remove Object
         </button>
       </form>
       {/* Right col */}

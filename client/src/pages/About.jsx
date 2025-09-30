@@ -7,7 +7,7 @@ const About = () => {
 
   const testimonials = [
     {
-      image: "public/yasir.png",
+      image: "/yasir.png",
       name: "Yasir Aquil",
       title: "Content Creator, Freelance",
       content:
@@ -15,7 +15,7 @@ const About = () => {
       rating: 4,
     },
     {
-      image: "public/ovais.jpeg",
+      image: "/ovais.jpeg",
       name: "Ovais Rajput",
       title: "Developer, TechCorp",
       content:
