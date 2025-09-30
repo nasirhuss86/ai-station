@@ -87,7 +87,7 @@ const WriteArticle = () => {
         <br />
         <button disabled={loading} className='w-full flex justify-center items-center gap-2 bg-gradient-to-r from-[#226BFF] to-[#65ADFF] text-white px-4 py-2 mt-6 text-sm rounded-lg cursor-pointer'>
           {
-              loading ? <span className='w-4 h-4 border-2 border-t-2 border-blue-500 rounded-full animate-spin'></span> 
+              loading ? <span className='w-4 h-4 border-2 border-t-2 border-white rounded-full animate-spin'></span> 
                : <Edit className='w-9 h-9' />
           }
           
@@ -119,8 +119,6 @@ const WriteArticle = () => {
             <div className='reset-tw'>
               <Markdown>
                 {content}
-                
-
               </Markdown> 
             </div>
           </div>

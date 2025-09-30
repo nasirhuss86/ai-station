@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import OpenAI from "openai";
 import sql from "../config/db.js";
 import { clerkClient } from "@clerk/express";
@@ -7,6 +8,7 @@ import connectCloudinary from "../config/cloudinary.js";
 import { v2 as cloudinary } from "cloudinary";
 import fs from "fs";
 import pdf from "pdf-parse/lib/pdf-parse.js";
+
 
 await connectCloudinary();
 
@@ -154,6 +156,13 @@ export const generateImage = async (req, res) => {
   }
 };
 
+
+
+
+
+
+
+
 export const removeImageBackground = async (req, res) => {
   try {
     const { userId } = req.auth();
@@ -193,6 +202,12 @@ export const removeImageBackground = async (req, res) => {
     res.json({ success: false, message: error.message });
   }
 };
+
+
+
+
+
+
 
 export const removeImageObject = async (req, res) => {
   try {
