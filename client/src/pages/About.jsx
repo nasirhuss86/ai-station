@@ -34,7 +34,7 @@ const About = () => {
   ];
 
   return (
-    <div className="px-4 sm:px-20 xl:px-32 py-16 min-h-screen bg-[url(./gradientBackground.png)] bg-cover bg-no-repeat">
+    <div className="px-4 sm:px-20 xl:px-32 py-16 min-h-screen bg-[url('/gradientBackground.png')] bg-cover bg-no-repeat">
      
       <div className="text-center mb-16">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold text-slate-700 mb-6">

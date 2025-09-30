@@ -6,17 +6,13 @@ const Author = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="px-6 sm:px-16 xl:px-32 relative bg-[url(./gradientBackground.png)] bg-cover bg-no-repeat min-h-screen py-24">
+    <div className="px-6 sm:px-16 xl:px-32 relative bg-[url('/gradientBackground.png')] bg-cover bg-no-repeat min-h-screen py-24">
       <div className="max-w-5xl mx-auto">
        
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
           
           <div className="flex-shrink-0">
-            <img
-              src="/nasir.jpeg"
-              alt="Nasir Hussain"
-              className="w-40 h-40 sm:w-52 sm:h-52 rounded-2xl object-cover shadow-lg"
-            />
+            <img className="w-40 h-40 sm:w-52 sm:h-52 rounded-2xl object-cover shadow-lg" src="/nasir.jpeg" alt="Nasir Hussain" />
           </div>
 
          
